@@ -48,7 +48,7 @@ view: order_items {
 
   dimension: sale_price {
     type: number
-    sql: ${TABLE}.sale_price ;;
+    sql: "$"+${TABLE}.sale_price ;;
     value_format_name: usd
     value_format: "0.00"
   }
