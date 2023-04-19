@@ -101,12 +101,12 @@ view: users {
 
   dimension: full_name {
     type: string
-    sql: concat(${first_name},“ “,${last_name}) ;;
+    sql: concat(${TABLE}.first_name,“ “,${TABLE}.last_name) ;;
   }
 
   dimension: length_of_full_name {
     type: number
-    sql: length(${full_name}) ;;
+    sql: length(concat(${TABLE}.first_name,${TABLE}.last_name)) ;;
   }
 
   dimension: age_tier {
