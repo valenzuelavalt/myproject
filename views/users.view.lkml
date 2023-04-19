@@ -106,7 +106,7 @@ view: users {
 
   dimension: lenght_of_full_name {
     type: number
-    sql: LENGHT(${full_name}) ;;
+    sql: LENGTH(${full_name}) ;;
   }
 
   dimension: age_tier {
