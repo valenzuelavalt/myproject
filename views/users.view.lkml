@@ -111,7 +111,9 @@ view: users {
 
   dimension: age_tier {
     type: tier
+    sql: ${age} ;;
     tiers: [0,10,20,30,40,50,60,70,80,90,100 ]
+    style: integer
   }
   measure: count {
     type: count
